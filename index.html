@@ -93,8 +93,9 @@
             position: relative;
         }
         
+
         .hero-profile-pic {
-            width: 500px;
+            width: 250px;
             height: 250px;
             border-radius: 15px;
             object-fit: cover;
@@ -102,6 +103,9 @@
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
             position: relative;
             z-index: 2;
+            margin: 0 auto; /* Center the image horizontally if needed */
+            display: block; /* Removes default inline behavior that could cause overlap */
+            max-width: 100%; /* Ensures image doesn't overflow its container */
         }
         
         .hero-image-glow {
